@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+.home {
+    &:before {
+        display: none;
+    }
+}
+
+.logo {
+    margin: 8rem auto;
+    width: 500px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+}
+
+.event {
+    margin-bottom: 3.5rem;
+    padding: 3rem 18rem 0 12rem;
+    width: 100%;
+    height: 20rem;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: auto 16rem;
+    background-position: left 3rem center;
+    border-radius: 1rem;
+    position: relative;
+    line-height: 1;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+
+    &-title {
+        font-size: 6rem;
+        font-family: 'Alte-DIN-1451-Mittelschrift';
+    }
+
+    &-date {
+        font-size: 3rem;
+        font-family: 'Alte-DIN-1451-Mittelschrift';
+        color: $glay;
+    }
+
+    &-copy {
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        color: $glay;
+    }
+
+    &-link {
+        padding-top: 20rem;
+        width: 15rem;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: $glay;
+        border-radius: 0 1rem 1rem 0;
+
+        &:after {
+            margin: auto;
+            width: 7.5rem;
+            height: 7.5rem;
+            content: url(../img/arrow.svg);
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            transition: .4s;
+        }
+
+        &:hover:after {
+            transform: rotate(0.25turn);
+            transform-origin: 50% 50%;
+        }
+
+    }
+
+    &.event-training {
+        background-image: url(../img/trainig.svg);
+
+        .event-link {
+            background-color: $yellow;
+        }
+    }
+
+    &.event-talks {
+        background-image: url(../img/talks.svg);
+
+        .event-link {
+            background-color: $cyan;
+        }
+    }
+
+    &.event-party {
+        background-image: url(../img/party.svg);
+
+        .event-link {
+            background-color: $magenta;
+        }
+    }
+
+    &.event-sprints {
+        background-image: url(../img/sprints.svg);
+
+        .event-link {
+            background-color: $green;
+        }
+    }
+
+}
+
+.sponsors {
+    margin-bottom: 3.5rem;
+    padding: 3rem;
+    width: 100%;
+    background-color: $white;
+    border-radius: 1rem;
+    position: relative;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+    
+    &-grade {
+        font-size: 3rem;
+        font-family: 'Alte-DIN-1451-Mittelschrift';
+        color: $glay;
+    }
+    
+}

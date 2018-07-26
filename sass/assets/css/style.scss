@@ -28,18 +28,14 @@ main
 
 @import "../../_main";
 
+@import "../../_home";
+
+
 /*==============================
 footer
 ==============================*/
 
 @import "../../_footer";
-
-
-h1 {
-    margin: 0;
-    width: 500px;
-    filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
-}
 
 
 /*memo
