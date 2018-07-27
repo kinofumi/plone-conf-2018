@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.about {
+    .pagetitle{
+        
+        background-image: url(../img/titlelogo-about.svg);
+        
+        &:after {
+            background-color: $cyan;
+        }
+    }
+}

@@ -59,7 +59,7 @@
             margin: auto;
             width: 7.5rem;
             height: 7.5rem;
-            content: url(../img/arrow.svg);
+            content: url(../img/icon-arrow.svg);
             display: block;
             position: absolute;
             top: 0;
@@ -77,7 +77,7 @@
     }
 
     &.event-training {
-        background-image: url(../img/trainig.svg);
+        background-image: url(../img/titlelogo-trainig.svg);
 
         .event-link {
             background-color: $yellow;
@@ -85,7 +85,7 @@
     }
 
     &.event-talks {
-        background-image: url(../img/talks.svg);
+        background-image: url(../img/titlelogo-talks.svg);
 
         .event-link {
             background-color: $cyan;
@@ -93,7 +93,7 @@
     }
 
     &.event-party {
-        background-image: url(../img/party.svg);
+        background-image: url(../img/titlelogo-party.svg);
 
         .event-link {
             background-color: $magenta;
@@ -101,7 +101,7 @@
     }
 
     &.event-sprints {
-        background-image: url(../img/sprints.svg);
+        background-image: url(../img/titlelogo-sprints.svg);
 
         .event-link {
             background-color: $green;
@@ -123,6 +123,24 @@
         font-size: 3rem;
         font-family: 'Alte-DIN-1451-Mittelschrift';
         color: $glay;
+    }
+    
+    &-list {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        &__sponsor {
+            margin-bottom: 2rem;
+            display: block;
+            
+            img {
+                height: 4.5rem;
+            }
+        }
+        
     }
     
 }
