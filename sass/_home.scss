@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .home {
-    &:after {
-        display: none;
+    &:before {
+        opacity: 1.0;
     }
 }
 

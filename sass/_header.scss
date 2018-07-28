@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body > header {
+body>header {
     width: 100%;
     height: 40px;
     position: fixed;
@@ -8,19 +8,103 @@ body > header {
     display: block;
     background-color: $cyan;
     z-index: 100;
+
+    @media (max-width: 736px) {
+        height: 4rem;
+    }
+
 }
 
 .gnav {
     margin: 0 auto;
     width: 100%;
     max-width: 920px;
+    position: relative;
 
     &-input {
         display: none;
+
+        @media (max-width: 736px) {
+
+            &:checked~.gnav-contents {
+                height: 100vh;
+                overflow: auto;
+            }
+
+            &:checked~.gnav-contents .gnav-contents__item {
+                transform: translateX(0);
+            }
+            &:checked~.gnav-open:before {
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            &:checked~.gnav-open:after {
+                opacity: 1;
+                transition: opacity 0.3s;
+            }
+        }
+
     }
 
     &-open {
         display: none;
+
+        @media (max-width: 736px) {
+            margin: auto;
+            width: 3rem;
+            height: 3rem;
+            display: block;
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            content: "";
+            cursor: pointer;
+            z-index: 300;
+        }
+
+        &:before {
+            @media (max-width: 736px) {
+                margin: auto;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                content: "";
+                cursor: pointer;
+                background-image: url(../img/icon-hamberger.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 1;
+                transition: opacity 0.3s;
+            }
+        }
+
+        &:after {
+            @media (max-width: 736px) {
+                margin: auto;
+                width: 2rem;
+                height: 2rem;
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                content: "";
+                cursor: pointer;
+                background-image: url(../img/icon-hamberger_c.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+        }
+
+
     }
 
     &-contents {
@@ -28,6 +112,27 @@ body > header {
         display: flex;
         justify-content: space-between;
         list-style: none;
+
+        @media (max-width: 736px) {
+            padding-top: 4rem;
+            height: 4rem;
+            display: block;
+            position: relative;
+        }
+
+        &__home {
+            @media (max-width: 736px) {
+                width: 100vw;
+                height: 4rem;
+                display: block;
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: $cyan;
+                z-index: 200;
+            }
+        }
 
         &__item {
             padding-right: 1.25rem;
@@ -39,6 +144,16 @@ body > header {
             text-decoration: none;
             position: relative;
             display: block;
+
+            @media (max-width: 736px) {
+                padding-left: 1rem;
+                height: 4rem;
+                line-height: 4rem;
+                transform: translatex(105%);
+                display: block;
+                background-color: rgba(15, 124, 178, 0.5);
+            }
+
 
             &:after {
                 margin-top: 0.75rem;
@@ -52,6 +167,11 @@ body > header {
                 bottom: 0;
                 right: 0;
                 transition: .4s;
+                @media (max-width: 736px) {
+                    width: 2rem;
+                    height: 2rem;
+                    right: 1.5rem;
+                }
             }
 
             &:hover {
@@ -80,6 +200,49 @@ body > header {
                 &:after {
                     display: none;
                 }
+
+                @media (max-width: 736px) {
+                    margin-left: 1rem;
+                    width: 2rem;
+                    transform: translatex(0);
+                    padding-top: 4rem;
+                }
+            }
+
+            &.item-about {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.3s;
+                }
+            }
+
+            &.item-training {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.35s;
+                }
+            }
+
+            &.item-talks {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.4s;
+                }
+            }
+
+            &.item-sprints {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.45s;
+                }
+            }
+
+            &.item-venue {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.5s;
+                }
+            }
+
+            &.item-terms {
+                @media (max-width: 736px) {
+                    transition: ease-in-out 0.55s;
+                }
             }
 
             &.item-contact {
@@ -96,7 +259,21 @@ body > header {
 
                 &:after {
                     display: none;
+
+                    @media (max-width: 736px) {
+                        display: block;
+                    }
                 }
+
+                @media (max-width: 736px) {
+                    margin-left: 0;
+                    padding-top: 0;
+                    width: 100%;
+                    height: 4rem;
+                    background-image: none;
+                    transition: ease-in-out 0.6s;
+                }
+
             }
 
             &.item-search {
@@ -112,6 +289,19 @@ body > header {
 
                 &:after {
                     display: none;
+
+                    @media (max-width: 736px) {
+                        display: block;
+                    }
+                }
+
+                @media (max-width: 736px) {
+                    margin-left: 0;
+                    padding-top: 0;
+                    width: 100%;
+                    height: 4rem;
+                    background-image: none;
+                    transition: ease-in-out 0.65s;
                 }
             }
 
