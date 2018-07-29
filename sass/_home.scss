@@ -33,6 +33,14 @@
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
 
     @media (max-width: 952px) {
+        padding: 2rem 1rem 2rem 7rem;
+        width: calc(100vw - 2rem);
+        height: 18rem;
+        background-size: 3.5rem auto;
+        background-position: left 1.5rem top 2rem;
+    }
+
+    @media (max-width: 666px) {
         padding: 2rem 1rem 2rem 5rem;
         width: calc(100vw - 2rem);
         height: 18rem;
@@ -40,13 +48,19 @@
         background-position: left 1rem top 2rem;
     }
 
+
     &-title {
         font-size: 6rem;
         font-family: 'Alte-DIN-1451-Mittelschrift';
 
         @media (max-width: 952px) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 666px) {
             font-size: 3rem;
         }
+
     }
 
     &-date {
@@ -64,11 +78,15 @@
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
         color: $glay;
-        
+
         @media (max-width: 952px) {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 666px) {
             font-size: 1rem;
         }
-        
+
     }
 
     &-link {
@@ -101,12 +119,12 @@
             right: 0;
             left: 0;
             transition: .4s;
-            
+
             @media (max-width: 952px) {
                 width: 3.5rem;
                 height: 3.5rem;
             }
-            
+
         }
 
         &:hover:after {
@@ -158,7 +176,7 @@
     border-radius: 1rem;
     position: relative;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
-    
+
     @media (max-width: 952px) {
         padding: 1rem;
         width: calc(100vw - 2rem);
@@ -168,11 +186,11 @@
         font-size: 3rem;
         font-family: 'Alte-DIN-1451-Mittelschrift';
         color: $glay;
-        
+
         @media (max-width: 952px) {
             font-size: 1.5rem;
         }
-        
+
     }
 
     &-list {
@@ -188,11 +206,11 @@
 
             img {
                 height: 4.5rem;
-                
+
                 @media (max-width: 952px) {
                     height: 3rem;
                 }
-                
+
             }
         }
 

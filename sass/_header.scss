@@ -112,13 +112,14 @@ body>header {
         display: flex;
         justify-content: space-between;
         list-style: none;
+        overflow: hidden;
 
         @media (max-width: 952px) {
             padding-top: 4rem;
             height: 4rem;
             display: block;
             position: relative;
-            overflow: hidden;
+            transition: ease-in-out 0.3s;
         }
 
         &__home {
@@ -153,6 +154,7 @@ body>header {
                 transform: translatex(105%);
                 display: block;
                 background-color: rgba(15, 124, 178, 0.5);
+                transition: 0;
             }
 
 
@@ -167,7 +169,6 @@ body>header {
                 top: 0;
                 bottom: 0;
                 right: 0;
-                transition: .4s;
                 @media (max-width: 952px) {
                     width: 2rem;
                     height: 2rem;
