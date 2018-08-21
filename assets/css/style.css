@@ -670,13 +670,22 @@ pages
   display: flex;
   border-top: 1px solid #9FA0A0;
   border-bottom: 1px solid #9FA0A0; }
+  @media (max-width: 952px) {
+    .block_type01 {
+      display: block; } }
   .block_type01 .image {
     margin: 0 2rem 0;
     width: 150px;
     height: 150px;
     border-radius: 100%; }
+    @media (max-width: 952px) {
+      .block_type01 .image {
+        margin: 0 auto 2rem; } }
   .block_type01 .text {
     margin-right: 4rem; }
+    @media (max-width: 952px) {
+      .block_type01 .text {
+        margin: 0; } }
     .block_type01 .text p {
       width: 100%; }
       .block_type01 .text p:last-child {

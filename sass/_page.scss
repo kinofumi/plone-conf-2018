@@ -167,15 +167,27 @@
     border-top: 1px solid $glay;
     border-bottom: 1px solid $glay;
     
+    @media (max-width: 952px) {
+        display: block;
+    }
+    
     .image {
         margin: 0 2rem 0;
         width: 150px;
         height: 150px;
         border-radius: 100%;
+        
+        @media (max-width: 952px) {
+            margin: 0 auto 2rem;
+        }
     }
     
     .text {
         margin-right: 4rem;
+        
+        @media (max-width: 952px) {
+            margin: 0;
+        }
         
         p {
             width: 100%;
