@@ -158,3 +158,34 @@
     }
 
 }
+
+.block_type01 {
+    padding: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    border-top: 1px solid $glay;
+    border-bottom: 1px solid $glay;
+    
+    .image {
+        margin: 0 2rem 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    
+    .text {
+        margin-right: 4rem;
+        
+        p {
+            width: 100%;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+        }
+        
+    }
+    
+}

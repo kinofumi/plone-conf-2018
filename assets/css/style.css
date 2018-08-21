@@ -663,6 +663,25 @@ pages
       .pagecontents img {
         width: 100%; } }
 
+.block_type01 {
+  padding: 2rem 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  border-top: 1px solid #9FA0A0;
+  border-bottom: 1px solid #9FA0A0; }
+  .block_type01 .image {
+    margin: 0 2rem 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%; }
+  .block_type01 .text {
+    margin-right: 4rem; }
+    .block_type01 .text p {
+      width: 100%; }
+      .block_type01 .text p:last-child {
+        margin-bottom: 0; }
+
 .home:before {
   opacity: 1.0; }
 
